@@ -24,8 +24,8 @@
 			<td th:text="${persona.edad}"></td>
 			
 			<td>
-				<a>Editar</a>
-				<a>Eliminar</a>
+				<a th:href="@{'/personas/editar/' + ${persona.id}}">Editar</a>
+				<a th:href="@{'/personas/eliminar/' + ${persona.id}}" onclick="return confirm('¿Estás seguro de eliminar?')">Eliminar</a>
 				
 			</td>
 		

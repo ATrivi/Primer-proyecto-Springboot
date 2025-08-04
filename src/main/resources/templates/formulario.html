@@ -11,6 +11,7 @@
 	
 	<form th:object="${persona}" th:action="${accion}" method="post"> 
 		
+		<input type="hidden" th:field="*{id}" >
 		<label> Nombre: <input type="text" th:field= "*{name}"/></label><br/>
 		<label> Edad: <input type="number" th:field= "*{edad}"/></label><br/>
 		
@@ -19,7 +20,6 @@
 	</form>
 	
 	<a href="/personas">Volver al listado de personas</a>
-
     
 </body>
 </html>
